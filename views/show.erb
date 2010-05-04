@@ -1,0 +1,16 @@
+<h3>Available Work Items</h3>
+<table border="1" cellpadding="6" cellspacing="0">
+	<tr><th>Name</th><th>Description</th><th>Pay Amount</th></tr>
+	<% if @workitems %>
+	<% @workitems.each do |item| %>
+	<tr>
+		<td><%= item["name"] %></td>
+		<td><%= item["description"] %></td>
+		<td>$<%= item["pay"] %></td>
+	</tr>
+	<% end %>
+	<% else %>
+	<tr><td colspan="3">No work items yet</td></tr>
+	<% end %>
+</table>
+<p><a href="/">Home</a></p>
