@@ -1,0 +1,5 @@
+Sluis Van is a simple app written in Sinatra and using MongoDB to store chores for the kids.
+
+Currently it's a proof of concept, no specs or validation around the models yet.
+
+Based on the Yasi model from http://blog.rubyhead.com/file/yasi.zip
